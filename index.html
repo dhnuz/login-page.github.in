@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="style.css">
+    
+    </head>
+    <body>
+
+        <div class="hero">
+            <div id="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-button" onclick="login()">Login</button>
+                    <button type="button" class="toggle-button" onclick="register()">Register</button>
+                </div>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box" ><span>Remember password</span>
+                    <button type="submit"  class="submit-btn">Log in</button> 
+        
+                </form>
+                <form id="register" class="input-group">
+                    <input type="text" style="width:480px;" class="input-field" placeholder="First name" required>
+                    <input type="text" style="width:480px;" class="input-field" placeholder="Last name" required>
+                    <input type="email"  style="width:480px;" class="input-field" placeholder="Email Id" required>
+                    <input type="text"  style="width:480px;" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox"   class="check-box" ><span> I agree to the terms & conditions</span>
+                    <button type="submit"  style="width:330px; margin-left:80px;"  class="submit-btn">Sign up</button> 
+        
+                </form>
+            
+                <div class="Bottom-nav">
+                <ul class="social">
+                    <li><a href="https://github.com/gurudhanush101 "  target="_blank" class="fa fa-github"></a></li>
+                    <li><a href="https://twitter.com/dhanush99959" target="_blank" class="fa fa-twitter"></a></li>
+                    <li><a href="https://instagram.com/vampire.25?igshid=YmMyMTA2M2Y=" class="fa fa-instagram"></a></li>
+                    <li><a href="https://www.linkedin.com/in/guru-dhanush/" class="fa fa-linkedin"></a></li>
+                </ul>
+            </div>
+        
+        
+            </div>
+           
+        </div>
+
+        <script>
+           var x =document.getElementById("login");
+           var y =document.getElementById("register");
+           var z =document.getElementById("btn");
+           var f =document.getElementById("form-box")
+           var h =document.getElementById("form-box")
+
+        function register() {
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="107px";
+            f.style.width="600px";
+        }
+        
+        function login() {
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0";
+            f.style.height="490px";
+            h.style.width="390px";
+            
+        }
+        </script>
+          <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
+    </body>
+</html>
